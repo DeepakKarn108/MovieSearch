@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 // setting the api link
-export const API_URL = `https: //www.omdbapi.com/?&apikey=${process.env.REACT_APP_MOVIE_KEY}`;
-/* plz subsribe to thapa technical channel 
-          https://www.youtube.com/thapatechnical
-         */
+export const API_URL = ` https://www.omdbapi.com/?apikey=6eba67d1&=${process.env.REACT_APP_MOVIE_KEY}`;
+
 
 const useFetch = (apiParams) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,7 +15,6 @@ const useFetch = (apiParams) => {
       const res = await fetch(url);
       const data = await res.json();
 
-      console.log(data);
       if (data.Response === "True") {
         setIsLoading(false);
         setMovie(data.Search || data);
