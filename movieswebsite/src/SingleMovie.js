@@ -10,7 +10,7 @@ const SingleMovie = () => {
   if (isLoading) {
     return (
       <section className="movie-section ">
-        <div className="loading">Loading....</div>;
+        <div className="loading">Please Wait....</div>;
       </section>
     );
   }

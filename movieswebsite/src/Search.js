@@ -3,13 +3,11 @@ import { useGlobalContext } from "./context";
 
 const Search = () => {
   const { query, setQuery, isError } = useGlobalContext();
-  /* plz subsribe to thapa technical channel 
-          https://www.youtube.com/thapatechnical
-         */
+  
   return (
     <>
       <section className="search-section">
-        <h2>Search Your Favourite Movie</h2>
+        <h2>Check your favourite movie Discription</h2>
         <form action="#" onSubmit={(e) => e.preventDefault()}>
           <div>
             <input
