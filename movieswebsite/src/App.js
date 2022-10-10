@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import SingleMovie from "./SingleMovie";
+
 import "./App.css";
+import Subscription from "./Subscription";
 
 const App = () => {
   return (
@@ -11,6 +13,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="movie/:id" element={<SingleMovie />} />
+      
     </Routes>
     </>
     
