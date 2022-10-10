@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 // setting the api link
-export const API_URL = ` https://www.omdbapi.com/?apikey=6eba67d1&=${process.env.REACT_APP_MOVIE_KEY}`;
+export const API_URL = ` https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MOVIE_KEY}`;
 
 
 const useFetch = (apiParams) => {
