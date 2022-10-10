@@ -6,7 +6,7 @@ const AppContext = React.createContext();
 
 // we are getting the children and that is app component in our case
 const AppProvider = ({ children }) => {
-  const [query, setQuery] = useState("hacker");
+  const [query, setQuery] = useState("vikram");
   const { isLoading, isError, movie } = useFetch(`&s=${query}`);
 
   return (
