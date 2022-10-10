@@ -1,6 +1,5 @@
 import Movie from "./Movie";
 import Search from "./Search";
-import Subscription  from "./Subscription";
 const Home = () => {
   return (
     <>
@@ -8,7 +7,6 @@ const Home = () => {
         
         <Search />
         <Movie />
-        <Subscription />
       </div>
     </>
   );

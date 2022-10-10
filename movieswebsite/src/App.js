@@ -4,7 +4,7 @@ import Home from "./Home";
 import SingleMovie from "./SingleMovie";
 
 import "./App.css";
-import Subscription from "./Subscription";
+
 
 const App = () => {
   return (
